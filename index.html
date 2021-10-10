@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/owl/owl.theme.default.min.css">
+    <title>TrailerFlix</title>
+</head>
+<body>
+    <header>
+        <div class='container'>
+            <h2 class='Logo'>TRAILERFLIX</h2>
+            <nav>
+                <a href='#'>Início</a>
+                <a href='#'>Séries</a> 
+                <a href='#'>Filmes</a> 
+                <a href='#'>Documentários</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class='main-film'>
+            <div class='container'>
+                <div class='descript'>
+                    <h3 class='title'>HOUSE OF CARDS</h3>
+                    <p class='description'>
+                        Um político inescrupuloso não mede esforços para conquistar o poder nos EUA neste drama vencedor do Emmy e do Globo de Ouro.
+                    </p>
+                    <div class='buttons'>
+                        <button role='button' class='button' id='play' onclick="onPlay()">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR TRAILER
+                        </button>
+                        <button role='button' class='button'>
+                            <i class="fas fa-info-circle"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+
+                <div class='video' id='video'>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <div class='carousel-films'>
+        <div class='owl-carousel owl-theme'>
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/z59kJfcElR9eHO9rJbWp4qWMuee.jpg', 'https://www.youtube.com/embed/N-QSZKxkBjo', 'The Flash ', 'Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade.' )">
+
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/yZevl2vHQgmosfwUdVNzviIfaWS.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/n00M5kO1C9xBkusfe56Zvrihw6c.jpg', 'https://www.youtube.com/embed/Ncra_hUVtMM', 'Round 6', 'Centenas de jogadores falidos aceitam um estranho convite para um jogo de sobrevivência. Um prêmio milionário aguarda, mas as apostas são altas e mortais.')">
+
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/6gcHdboppvplmBWxvROc96NJnmm.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/jnzoh5qoxRLFRIQAxnl6D3RStPC.jpg', 'https://www.youtube.com/embed/zq-dKITdTsE', 'What If...? ', 'Baseada nos populares quadrinhos homônimos, a produção explorará histórias hipotéticas que poderiam ter mudado completamente o rumo do universo cinematográfico da editora.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/lztz5XBMG1x6Y5ubz7CxfPFsAcW.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/u23G9KZregWHs1use6ir1fX27gl.jpg', 'https://www.youtube.com/embed/46DLtYfJ6WI', 'Sex Education', 'O inseguro Otis manja tudo quando o negócio é aconselhamento sexual, graças à sua mãe sexóloga. E aí a rebelde Maeve propõe criar uma clínica de terapia sexual na escola.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/cK6JhcZFpwVW9tldz3llodY2TeY.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/ccaZ3yyyC6rcMAQrlLZ51FpahNO.jpg', 'https://www.youtube.com/embed/-0beFQnB5lY', 'Lucifer', 'Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua sabedoria a uma investigadora de assassinatos.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/hdKxcoV5CFc3sGOmbGXDXbx1cTZ.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/ive5FO8ey0EOXaJ72ygLwV8Uvqd.jpg', 'https://www.youtube.com/embed/HxtLlByaYTc', 'Riverdale ', 'Enquanto tentam lidar com problemas típicos da adolescência como amor, sexo, escola e família, Archie e sua turma se envolvem em um grande mistério.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/wRbjVBdDo5qHAEOVYoMWpM58FSA.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/f9fpHGgqRpoaL2CnBg7ro7RAzkI.jpg', 'https://www.youtube.com/embed/sfAc2U20uyg', 'The Walking Dead', 'Nos Estados Unidos pós-apocalíptico, um pequeno grupo de sobreviventes segue viajando à procura de uma nova casa longe dos mortos-vivos. O desespero por segurança e suprimentos os coloca constantemente à beira da sanidade.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/z5RZ0I9MlUKxGBxsr9YeJRMAYez.jpg', 'https://www.youtube.com/embed/VY-TETyvlrY', 'La Casa de Papel ', 'Um homem misterioso que atende pelo nome de El Profesor, está planejando o maior assalto do século. A fim de realizar o ambicioso plano ele recruta uma gangue de oito pessoas com certas habilidades que não tem nada a perder. O objetivo é infiltrar na Casa da Moeda, de modo que eles possam imprimir 2,4 bilhões de euros. Para fazer isso eles precisam de onze dias de reclusão, durante o qual eles vão ter que lidar com sessenta e sete reféns e as forças da Polícia de Elite, com cenas de muita ação e planos brilhantes de El Profesor.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/8ZWzKXf3qPxXuxApGJ0i4TTuWTl.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/dpzC0ACzwkVporKvzZGvNFOBFr6.jpg', 'https://www.youtube.com/embed/q1pcpgREQ5c', 'Greys Anatomy', 'Os médicos do Grey Sloan Memorial Hospital lidam diariamente com casos e consequências de vida ou morte. É um no outro que eles encontram apoio, conforto, amizade e, às vezes, até mais que amizade... Juntos, eles descobrem o quanto a vida profissional e a pessoal podem ser complicadas e se misturarem no meio do caminho.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/clnyhPqj1SNgpAdeSS6a6fwE6Bo.jpg' alt=''/>
+            </div>
+
+            <div class='item' onclick="setCard('https://www.themoviedb.org/t/p/w500_and_h282_face/jOJP93WpQrmSXX16lQCNulwuUVO.jpg', 'https://www.youtube.com/embed/xdBWrkcmMwU', 'Loki', 'Começando imediatamente depois que Loki rouba o Tesseract (de novo), ele se encontra diante da Autoridade de Variação Temporal, uma organização burocrática que existe fora do tempo e espaço. Forçado a responder por seus crimes contra a linha do tempo, ele recebe uma escolha: Ser deletado da realidade ou ajudar a capturar uma ameaça ainda maior.')">
+                <img class='box-film' src='https://www.themoviedb.org/t/p/w220_and_h330_face/ukR0MkCQE6IylzBPd61txJi1L3E.jpg' alt=''/>
+            </div> 
+        </div>
+    </div>
+
+    <script src='js/owl/jquery.min.js'></script>
+    <script src='js/owl/owl.carousel.min.js'></script>
+    <script src='js/setup.js'></script>
+    <script src="https://kit.fontawesome.com/6c69120ca2.js" crossorigin="anonymous"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>
+
